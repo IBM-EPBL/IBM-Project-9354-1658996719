@@ -1,0 +1,96 @@
+<!Doctype html>
+<html>
+    <head>
+
+        <style>
+            
+            .bg{
+                background-color:silver;
+                padding:20px;
+                font-weight: bold;
+            }
+            
+        </style>
+    
+    </head>
+    <body>
+        <center><h1>Heart Disease Prediction</h1></center>
+        
+        <div class="bg">
+
+       
+        <form action="/execute" method="POST">
+            <label>
+                Age
+            </label>
+            <input type="number" value="age" name="age">
+            <br><br>
+            <label>
+                Sex
+            </label>
+            <input type="number" value="sex" name="sex">
+            <br><br>
+            <label>
+                Chest pain type
+            </label>
+            <input type="number" value="chest pain type" name="chest pain type">
+            <br><br>
+            <label>
+                BP
+            </label>
+            <input type="number" value="bp" name="bp">
+            <br><br>
+            <label>
+                Cholesterol	
+            </label>
+            <input type="number" value="Cholesterol	" name="cholesterol">
+            <br><br>
+            <label>
+                FBS over 120
+            </label>
+            <input type="number" value="FBS over 120" name="fbs over 120">
+            <br><br>
+            <label>
+                EKG results
+            </label>
+            <input type="number" value="EKG results" name="ekg results">
+            <br><br>
+            <label>
+                Max HR
+            </label>
+            <input type="number" value="Max HR" name="max hr">
+            <br><br>
+            <label>
+                Exercise angina
+            </label>
+            <input type="number" value="Exercise angina" name="exercise angina">
+            <br><br>
+            <label>
+                ST depression
+            </label>
+            <input type="text"  name="st depression">
+            <br><br>
+            <label>
+                Slope of ST
+            </label>
+            <input type="number" value="Slope of ST" name="slope st">
+            <br><br>
+            <label>
+                Number of vessels fluro
+            </label>
+            <input type="number" value="Number of vessels fluro" name="number of vessels fluro">
+            <br><br>
+            <label>
+                Thallium
+            </label>
+            <input type="number" value="Thallium" name="thallium">
+            <br><br>
+            <button>submit</button>
+
+        </form>
+        {{prediction_text}}
+    </div>
+
+    
+    </body>
+    </html>
